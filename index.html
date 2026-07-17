@@ -240,7 +240,7 @@ footer strong{color:var(--white-60);}
   <div class="topbar-logos">
     <img src="https://devphant.com/images/logo.png" alt="Devphant"/>
     <span class="logo-sep"></span>
-    <img src="https://moodboardcompany.in/images/Moodboard-Logo.png" alt="Mood Board" style="filter:brightness(0) invert(1);"/>
+    <img src="https://moodboardcompany.in/images/Moodboard-Logo.png" alt="Mood Board" style="filter:brightness(0) invert(1);" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'"/><span style="display:none;font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:700;color:#fff;">Mood Board</span>
   </div>
   <div class="topbar-right"><strong>Kisanframe</strong> &nbsp;·&nbsp; Devphant × Mood Board &nbsp;·&nbsp; June 2026</div>
 </div>
@@ -445,16 +445,6 @@ footer strong{color:var(--white-60);}
       </div>
     </div>
 
-    <!-- Template pricing -->
-    <div class="tmpl-price-card animate delay-4">
-      <div class="tmpl-price-row">
-        <div>
-          <div style="font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--green);margin-bottom:8px;">Per Campaign — Template Creation</div>
-          <div class="tmpl-price-val">₹5,000 <span>per template (video or image)</span></div>
-          <p style="font-size:13px;color:var(--muted);margin-top:10px;line-height:1.65;max-width:480px;">Every new campaign needs its own video or image template — designed and built by Devphant × Mood Board based on Bayer's creative brief. Bayer can request as many templates as needed per campaign; each is charged at ₹5,000, billed per template created.</p>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -485,6 +475,25 @@ footer strong{color:var(--white-60);}
   </div>
 </section>
 
+<!-- OPTIONAL ADD-ONS -->
+<section>
+  <div class="container">
+    <div class="eyebrow animate">Optional Add-On</div>
+    <h2 class="section-title animate delay-1">Campaign Template Creation</h2>
+    <p class="section-desc animate delay-2">The platform build includes the full engine to run campaigns — but every new campaign needs its own creative template. This is optional and billed only when Bayer requests a new template.</p>
+
+    <div class="tmpl-price-card animate delay-3">
+      <div class="tmpl-price-row">
+        <div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--green);margin-bottom:8px;">Optional · Per Template</div>
+          <div class="tmpl-price-val">₹5,000 <span>per video or image template</span></div>
+          <p style="font-size:13px;color:var(--muted);margin-top:10px;line-height:1.65;max-width:520px;">Designed and built by Devphant × Mood Board based on Bayer's creative brief for each campaign. Request as many templates as needed — each video or image template is billed individually at ₹5,000, only when requested. No upfront commitment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- INCLUDED/NOT INCLUDED -->
 <section>
   <div class="container">
@@ -496,7 +505,7 @@ footer strong{color:var(--white-60);}
         <div style="padding:12px 22px;border-right:1px solid var(--border);display:flex;align-items:center;gap:8px;"><span style="width:7px;height:7px;border-radius:50%;background:var(--green);"></span><span style="font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--green);">Included</span></div>
         <div style="padding:12px 22px;display:flex;align-items:center;gap:8px;"><span style="width:7px;height:7px;border-radius:50%;background:var(--red);"></span><span style="font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--red);">Not Included</span></div>
       </div>
-      <div class="inc-row"><div class="inc-cell"><span style="color:var(--green);">✓</span><div><div class="inc-cell-title">Full Platform Build</div><div class="inc-cell-sub">Farmer flow + admin console + dashboards</div></div></div><div class="inc-cell"><span style="color:var(--red);">✗</span><div><div class="inc-cell-title">Campaign Templates</div><div class="inc-cell-sub">₹5,000 per video/image template, billed per campaign</div></div></div></div>
+      <div class="inc-row"><div class="inc-cell"><span style="color:var(--green);">✓</span><div><div class="inc-cell-title">Full Platform Build</div><div class="inc-cell-sub">Farmer flow + admin console + dashboards</div></div></div><div class="inc-cell"><span style="color:var(--red);">✗</span><div><div class="inc-cell-title">Domain & SSL</div><div class="inc-cell-sub">Bayer's existing domain and hosting security setup</div></div></div></div>
       <div class="inc-row"><div class="inc-cell"><span style="color:var(--green);">✓</span><div><div class="inc-cell-title">Free POC — 1,000 Generations</div><div class="inc-cell-sub">Test the platform before scaling up</div></div></div><div class="inc-cell"><span style="color:var(--red);">✗</span><div><div class="inc-cell-title">Ongoing AMC Support</div><div class="inc-cell-sub">₹10,000/month, optional, only if required</div></div></div></div>
       <div class="inc-row"><div class="inc-cell"><span style="color:var(--green);">✓</span><div><div class="inc-cell-title">Deployment on Bayer Cloud</div><div class="inc-cell-sub">Full setup on client-owned infrastructure</div></div></div><div class="inc-cell"><span style="color:var(--red);">✗</span><div><div class="inc-cell-title">Cloud Hosting Costs</div><div class="inc-cell-sub">Billed directly to Bayer by their cloud provider</div></div></div></div>
       <div class="inc-row"><div class="inc-cell"><span style="color:var(--green);">✓</span><div><div class="inc-cell-title">Campaign & Farmer Reports</div><div class="inc-cell-sub">Live dashboards, campaign-wise breakdown</div></div></div><div class="inc-cell"><span style="color:var(--red);">✗</span><div><div class="inc-cell-title">New Feature Development</div><div class="inc-cell-sub">Scoped and quoted separately, even under AMC</div></div></div></div>
@@ -553,7 +562,7 @@ footer strong{color:var(--white-60);}
   <div class="footer-logos">
     <img src="https://devphant.com/images/logo.png" alt="Devphant"/>
     <span class="footer-sep">×</span>
-    <img src="https://moodboardcompany.in/images/Moodboard-Logo.png" alt="Mood Board" style="filter:brightness(0) invert(1);"/>
+    <img src="https://moodboardcompany.in/images/Moodboard-Logo.png" alt="Mood Board" style="filter:brightness(0) invert(1);" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'"/><span style="display:none;font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:700;color:#fff;">Mood Board</span>
   </div>
   <div style="font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.2);">A Devphant × Mood Board Partnership</div>
   <div class="footer-div"></div>
