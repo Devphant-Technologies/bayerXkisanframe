@@ -179,11 +179,11 @@ section{padding:60px 0;border-bottom:1px solid var(--border);}
 
 /* GANTT */
 .gantt-wrap{background:var(--black-3);border:1px solid var(--border);border-radius:16px;overflow:hidden;}
-.gantt-hdr{display:grid;grid-template-columns:220px repeat(4,1fr);background:var(--black-4);border-bottom:1px solid var(--border);}
+.gantt-hdr{display:grid;grid-template-columns:220px repeat(2,1fr);background:var(--black-4);border-bottom:1px solid var(--border);}
 .gh-cell{padding:11px 8px;font-family:'Space Grotesk',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);text-align:center;border-right:1px solid var(--border);}
 .gh-cell:first-child{text-align:left;padding-left:16px;}
 .gh-cell:last-child{border-right:none;}
-.gantt-row{display:grid;grid-template-columns:220px repeat(4,1fr);border-bottom:1px solid var(--border);align-items:center;transition:background .15s;}
+.gantt-row{display:grid;grid-template-columns:220px repeat(2,1fr);border-bottom:1px solid var(--border);align-items:center;transition:background .15s;}
 .gantt-row:hover{background:var(--white-10);}
 .gantt-row:last-child{border-bottom:none;}
 .gr-label{padding:12px 16px;font-size:12.5px;color:var(--muted);border-right:1px solid var(--border);font-family:'Space Grotesk',sans-serif;font-weight:500;}
@@ -227,7 +227,7 @@ footer strong{color:var(--white-60);}
   .db-body{grid-template-columns:1fr;}
   .db-bottom{grid-template-columns:1fr;}
   .db-bottom-col{border-right:none;border-bottom:1px solid var(--border);}
-  .gantt-hdr,.gantt-row{grid-template-columns:130px repeat(4,1fr);}
+  .gantt-hdr,.gantt-row{grid-template-columns:130px repeat(2,1fr);}
   .gr-label{font-size:10px;padding:10px;}
   .tmpl-price-row{flex-direction:column;align-items:flex-start;}
   footer{padding:28px 16px;}
@@ -518,20 +518,20 @@ footer strong{color:var(--white-60);}
   <div class="container">
     <div class="eyebrow animate">Delivery Plan</div>
     <h2 class="section-title animate delay-1">Build Timeline</h2>
-    <p class="section-desc animate delay-2">A focused build followed by POC testing before full campaign rollout.</p>
+    <p class="section-desc animate delay-2">A rapid 2-week build — from discovery to a fully deployed, POC-ready platform.</p>
     <div class="gantt-wrap animate delay-3">
       <div class="gantt-hdr">
         <div class="gh-cell">Deliverable</div>
-        <div class="gh-cell">Week 1</div><div class="gh-cell">Week 2</div><div class="gh-cell">Week 3</div><div class="gh-cell">Week 4</div>
+        <div class="gh-cell">Week 1</div><div class="gh-cell">Week 2</div>
       </div>
-      <div class="gantt-row"><div class="gr-label">🗺️ Discovery & Architecture</div><div class="gr-cell"><div class="gantt-bar" style="width:100%;animation-delay:.1s;"></div></div><div class="gr-cell"></div><div class="gr-cell"></div><div class="gr-cell"></div></div>
-      <div class="gantt-row"><div class="gr-label">🎨 UI/UX Design</div><div class="gr-cell"><div class="gantt-bar" style="width:100%;animation-delay:.12s;"></div></div><div class="gr-cell"><div class="gantt-bar" style="width:60%;animation-delay:.15s;"></div></div><div class="gr-cell"></div><div class="gr-cell"></div></div>
-      <div class="gantt-row"><div class="gr-label">📸 Farmer Upload Flow</div><div class="gr-cell"></div><div class="gr-cell"><div class="gantt-bar" style="width:100%;animation-delay:.18s;"></div></div><div class="gr-cell"></div><div class="gr-cell"></div></div>
-      <div class="gantt-row"><div class="gr-label">🤖 AI Generation Engine</div><div class="gr-cell"></div><div class="gr-cell"><div class="gantt-bar" style="width:100%;animation-delay:.2s;"></div></div><div class="gr-cell"><div class="gantt-bar" style="width:100%;animation-delay:.22s;"></div></div><div class="gr-cell"></div></div>
-      <div class="gantt-row"><div class="gr-label">🎨 Admin Console & Templates</div><div class="gr-cell"></div><div class="gr-cell"></div><div class="gr-cell"><div class="gantt-bar" style="width:100%;animation-delay:.25s;"></div></div><div class="gr-cell"></div></div>
-      <div class="gantt-row"><div class="gr-label">📊 Dashboards & Reports</div><div class="gr-cell"></div><div class="gr-cell"></div><div class="gr-cell"><div class="gantt-bar" style="width:100%;animation-delay:.28s;"></div></div><div class="gr-cell"></div></div>
-      <div class="gantt-row"><div class="gr-label">☁️ Bayer Cloud Deployment</div><div class="gr-cell"></div><div class="gr-cell"></div><div class="gr-cell"></div><div class="gr-cell"><div class="gantt-bar" style="width:100%;animation-delay:.3s;"></div></div></div>
-      <div class="gantt-row"><div class="gr-label">🎁 POC Testing & Go-Live</div><div class="gr-cell"></div><div class="gr-cell"></div><div class="gr-cell"></div><div class="gr-cell"><div class="gantt-bar" style="width:100%;background:var(--amber);animation-delay:.35s;"></div></div></div>
+      <div class="gantt-row"><div class="gr-label">🗺️ Discovery & Architecture</div><div class="gr-cell"><div class="gantt-bar" style="width:100%;animation-delay:.1s;"></div></div><div class="gr-cell"></div></div>
+      <div class="gantt-row"><div class="gr-label">🎨 UI/UX Design</div><div class="gr-cell"><div class="gantt-bar" style="width:100%;animation-delay:.12s;"></div></div><div class="gr-cell"><div class="gantt-bar" style="width:40%;animation-delay:.15s;"></div></div></div>
+      <div class="gantt-row"><div class="gr-label">📸 Farmer Upload Flow</div><div class="gr-cell"><div class="gantt-bar" style="width:60%;animation-delay:.15s;"></div></div><div class="gr-cell"><div class="gantt-bar" style="width:100%;animation-delay:.18s;"></div></div></div>
+      <div class="gantt-row"><div class="gr-label">🤖 AI Generation Engine</div><div class="gr-cell"><div class="gantt-bar" style="width:50%;animation-delay:.18s;"></div></div><div class="gr-cell"><div class="gantt-bar" style="width:100%;animation-delay:.2s;"></div></div></div>
+      <div class="gantt-row"><div class="gr-label">🎨 Admin Console & Templates</div><div class="gr-cell"></div><div class="gr-cell"><div class="gantt-bar" style="width:100%;animation-delay:.22s;"></div></div></div>
+      <div class="gantt-row"><div class="gr-label">📊 Dashboards & Reports</div><div class="gr-cell"></div><div class="gr-cell"><div class="gantt-bar" style="width:100%;animation-delay:.25s;"></div></div></div>
+      <div class="gantt-row"><div class="gr-label">☁️ Bayer Cloud Deployment</div><div class="gr-cell"></div><div class="gr-cell"><div class="gantt-bar" style="width:100%;animation-delay:.28s;"></div></div></div>
+      <div class="gantt-row"><div class="gr-label">🎁 POC Testing & Go-Live</div><div class="gr-cell"></div><div class="gr-cell"><div class="gantt-bar" style="width:100%;background:var(--amber);animation-delay:.3s;"></div></div></div>
     </div>
   </div>
 </section>
