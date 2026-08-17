@@ -158,12 +158,6 @@ section{padding:60px 0;border-bottom:1px solid var(--border);}
 .bifurc-amt{font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:700;white-space:nowrap;}
 .bifurc-div{height:1px;background:var(--border);margin:2px 0;}
 
-/* TEMPLATE PRICING CARD */
-.tmpl-price-card{background:linear-gradient(135deg,rgba(52,211,153,.08),rgba(74,158,231,.05));border:1px solid var(--green-border);border-radius:16px;padding:28px 30px;margin-top:20px;}
-.tmpl-price-row{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;}
-.tmpl-price-val{font-family:'Space Grotesk',sans-serif;font-size:32px;font-weight:700;color:var(--white);letter-spacing:-1px;}
-.tmpl-price-val span{font-size:14px;color:var(--muted);font-weight:400;}
-
 /* AMC */
 .amc-card{background:var(--black-3);border:1px solid var(--green-border);border-radius:16px;overflow:hidden;max-width:580px;position:relative;}
 .amc-optional-tag{position:absolute;top:16px;right:16px;background:var(--green-dim);border:1px solid var(--green-border);color:var(--green);font-size:10px;font-weight:700;font-family:'Space Grotesk',sans-serif;padding:3px 12px;border-radius:100px;letter-spacing:1px;text-transform:uppercase;}
@@ -176,20 +170,6 @@ section{padding:60px 0;border-bottom:1px solid var(--border);}
 .amc-feats{list-style:none;display:flex;flex-direction:column;gap:10px;}
 .amc-feats li{display:flex;gap:10px;font-size:13px;color:var(--muted);align-items:flex-start;line-height:1.5;}
 .amc-feats li span{color:var(--green);flex-shrink:0;margin-top:1px;}
-
-/* GANTT */
-.gantt-wrap{background:var(--black-3);border:1px solid var(--border);border-radius:16px;overflow:hidden;}
-.gantt-hdr{display:grid;grid-template-columns:220px repeat(2,1fr);background:var(--black-4);border-bottom:1px solid var(--border);}
-.gh-cell{padding:11px 8px;font-family:'Space Grotesk',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);text-align:center;border-right:1px solid var(--border);}
-.gh-cell:first-child{text-align:left;padding-left:16px;}
-.gh-cell:last-child{border-right:none;}
-.gantt-row{display:grid;grid-template-columns:220px repeat(2,1fr);border-bottom:1px solid var(--border);align-items:center;transition:background .15s;}
-.gantt-row:hover{background:var(--white-10);}
-.gantt-row:last-child{border-bottom:none;}
-.gr-label{padding:12px 16px;font-size:12.5px;color:var(--muted);border-right:1px solid var(--border);font-family:'Space Grotesk',sans-serif;font-weight:500;}
-.gr-cell{padding:12px 8px;border-right:1px solid var(--border);text-align:center;}
-.gr-cell:last-child{border-right:none;}
-.gantt-bar{height:7px;border-radius:100px;background:var(--green);animation:barGrow 1s cubic-bezier(.22,1,.36,1) both;}
 
 /* INCLUDED TABLE */
 .inc-wrap{background:var(--black-3);border:1px solid var(--border);border-radius:16px;overflow:hidden;}
@@ -227,9 +207,6 @@ footer strong{color:var(--white-60);}
   .db-body{grid-template-columns:1fr;}
   .db-bottom{grid-template-columns:1fr;}
   .db-bottom-col{border-right:none;border-bottom:1px solid var(--border);}
-  .gantt-hdr,.gantt-row{grid-template-columns:130px repeat(2,1fr);}
-  .gr-label{font-size:10px;padding:10px;}
-  .tmpl-price-row{flex-direction:column;align-items:flex-start;}
   footer{padding:28px 16px;}
 }
 </style>
@@ -254,11 +231,11 @@ footer strong{color:var(--white-60);}
   </div>
   <div class="hero-badge"><span class="badge-dot"></span>Product Proposal · 2026</div>
   <h1>Kisanframe<br/><span class="accent">by Devphant</span></h1>
-  <p class="hero-tagline">A farmer-facing AI campaign platform for Bayer — farmers upload a photo, AI generates a personalised video or image from campaign templates, and they download or share it instantly.</p>
+  <p class="hero-tagline">A farmer-facing AI campaign platform for Bayer — farmers upload a photo, AI generates a personalised image from campaign templates, and they download or share it instantly.</p>
   <div class="hero-stats">
-    <div class="stat-item"><div class="stat-value"><em>₹</em>2,25,000</div><div class="stat-label">Tech Build</div></div>
+    <div class="stat-item"><div class="stat-value"><em>₹</em>2,00,000</div><div class="stat-label">Tech Build</div></div>
     <div class="stat-item"><div class="stat-value">1,000</div><div class="stat-label">Free POC Limit</div></div>
-    <div class="stat-item"><div class="stat-value"><em>₹</em>5,000</div><div class="stat-label">Per Template</div></div>
+    <div class="stat-item"><div class="stat-value"><em>₹</em>1,20,000</div><div class="stat-label">AMC / Year</div></div>
     <div class="stat-item"><div class="stat-value">☁️</div><div class="stat-label">Bayer Cloud</div></div>
   </div>
 </div>
@@ -268,7 +245,7 @@ footer strong{color:var(--white-60);}
   <div class="container">
     <div class="eyebrow animate">The Experience</div>
     <h2 class="section-title animate delay-1">How a Farmer Uses Kisanframe</h2>
-    <p class="section-desc animate delay-2">A simple, guided journey — from campaign click to a shareable, personalised AI-generated video or image, in under a minute.</p>
+    <p class="section-desc animate delay-2">A simple, guided journey — from campaign click to a shareable, personalised AI-generated image, in under a minute.</p>
 
     <div class="journey-wrap animate delay-3">
       <div class="journey-step">
@@ -288,8 +265,8 @@ footer strong{color:var(--white-60);}
       <div class="journey-step">
         <div class="journey-num">🤖</div>
         <div class="journey-content">
-          <div class="journey-title">3. AI Generates Their Personalised Video/Image</div>
-          <div class="journey-desc">Kisanframe's AI engine places the farmer's photo into the pre-built campaign template — designed and uploaded by Bayer's team in the admin console — producing a personalised video or image in seconds.</div>
+          <div class="journey-title">3. AI Generates Their Personalised Image</div>
+          <div class="journey-desc">Kisanframe's AI engine places the farmer's photo into the pre-built campaign template — designed and uploaded by Bayer's team in the admin console — producing a personalised image in seconds.</div>
         </div>
       </div>
       <div class="journey-step">
@@ -311,11 +288,11 @@ footer strong{color:var(--white-60);}
     <p class="section-desc animate delay-2">Built for both farmers on the frontend and Bayer's marketing team on the backend.</p>
     <div class="feat-grid">
       <div class="feat animate delay-1"><span class="feat-icon">📸</span><h3>Photo Upload & Auto Campaign Selection</h3><p>Farmers upload their photo in one tap. The campaign is auto-detected from the link they clicked, or they can choose manually from active campaigns.</p><span class="feat-tag">Farmer Facing</span></div>
-      <div class="feat animate delay-2"><span class="feat-icon">🤖</span><h3>AI Video & Image Generation</h3><p>AI engine composites the farmer's photo into the campaign template, generating a personalised video or static image automatically — no manual editing needed.</p><span class="feat-tag">Core AI Engine</span></div>
-      <div class="feat animate delay-3"><span class="feat-icon">🎨</span><h3>Admin Template Manager</h3><p>Bayer's marketing team uploads and manages video/image templates directly from the admin console — no dependency on Devphant for every new campaign.</p><span class="feat-tag">Admin Console</span></div>
+      <div class="feat animate delay-2"><span class="feat-icon">🤖</span><h3>AI Image Generation</h3><p>AI engine composites the farmer's photo into the campaign template, generating a personalised image automatically — no manual editing needed.</p><span class="feat-tag">Core AI Engine</span></div>
+      <div class="feat animate delay-3"><span class="feat-icon">🎨</span><h3>Admin Template Manager</h3><p>Bayer's marketing team uploads and manages image templates directly from the admin console — no dependency on Devphant for every new campaign.</p><span class="feat-tag">Admin Console</span></div>
       <div class="feat animate delay-1"><span class="feat-icon">📤</span><h3>Download & Social Sharing</h3><p>One-tap download or direct share to WhatsApp, Instagram, and Facebook — built for virality across farmer networks.</p><span class="feat-tag">Farmer Facing</span></div>
       <div class="feat animate delay-2"><span class="feat-icon">📊</span><h3>Campaign-Wise Reports</h3><p>See exactly how each campaign is performing — uploads, generations, downloads, and shares — broken down campaign by campaign.</p><span class="feat-tag">Admin Console</span></div>
-      <div class="feat animate delay-3"><span class="feat-icon">👥</span><h3>Farmer Engagement Dashboard</h3><p>Track total farmers reached, photos uploaded, videos/images generated, and download/share rates — in real time.</p><span class="feat-tag">Admin Console</span></div>
+      <div class="feat animate delay-3"><span class="feat-icon">👥</span><h3>Farmer Engagement Dashboard</h3><p>Track total farmers reached, photos uploaded, images generated, and download/share rates — in real time.</p><span class="feat-tag">Admin Console</span></div>
       <div class="feat animate delay-1"><span class="feat-icon">☁️</span><h3>Deployed on Bayer's Cloud</h3><p>The entire platform is deployed on Bayer's own cloud infrastructure — full data ownership and control stays with Bayer.</p><span class="feat-tag">Infrastructure</span></div>
       <div class="feat animate delay-2"><span class="feat-icon">🔐</span><h3>Secure Admin Login</h3><p>Role-based admin console access for Bayer's marketing team to manage templates, campaigns, and view reports securely.</p><span class="feat-tag">Admin Console</span></div>
       <div class="feat animate delay-3"><span class="feat-icon">🎯</span><h3>Multi-Campaign Support</h3><p>Run multiple campaigns simultaneously, each with its own templates, tracking, and performance reports — all from one platform.</p><span class="feat-tag">Scalable</span></div>
@@ -345,7 +322,7 @@ footer strong{color:var(--white-60);}
         <div class="kpi-row">
           <div class="kpi"><div class="kpi-label">Farmers Reached</div><div class="kpi-value">18,420</div><div class="kpi-delta up">↑ 2,140 this week</div></div>
           <div class="kpi"><div class="kpi-label">Photos Uploaded</div><div class="kpi-value">14,890</div><div class="kpi-delta up">80.8% conversion</div></div>
-          <div class="kpi"><div class="kpi-label">Videos/Images Generated</div><div class="kpi-value">14,210</div><div class="kpi-delta up">95.4% success rate</div></div>
+          <div class="kpi"><div class="kpi-label">Images Generated</div><div class="kpi-value">14,210</div><div class="kpi-delta up">95.4% success rate</div></div>
           <div class="kpi"><div class="kpi-label">Downloads & Shares</div><div class="kpi-value">11,760</div><div class="kpi-delta up">82.8% share rate</div></div>
         </div>
         <div class="db-body">
@@ -383,10 +360,9 @@ footer strong{color:var(--white-60);}
             </div>
           </div>
           <div class="db-bottom-col">
-            <div class="mini-title">Content Type Split</div>
+            <div class="mini-title">Content Type</div>
             <div class="bar-row">
-              <div class="bar-item"><div class="bar-top"><span class="bar-label">Personalised Videos</span><span class="bar-val">68%</span></div><div class="bar-track"><div class="bar-fill bf-green" style="width:85%;animation-delay:.1s;"></div></div></div>
-              <div class="bar-item"><div class="bar-top"><span class="bar-label">Personalised Images</span><span class="bar-val">32%</span></div><div class="bar-track"><div class="bar-fill bf-blue" style="width:40%;animation-delay:.2s;"></div></div></div>
+              <div class="bar-item"><div class="bar-top"><span class="bar-label">Personalised Images</span><span class="bar-val">100%</span></div><div class="bar-track"><div class="bar-fill bf-green" style="width:100%;animation-delay:.1s;"></div></div></div>
             </div>
           </div>
         </div>
@@ -394,11 +370,11 @@ footer strong{color:var(--white-60);}
 
       <div class="db-panel" id="panel-templates">
         <div class="template-grid">
-          <div class="template-card"><div class="template-thumb">🎬</div><div class="template-info"><div class="template-name">Kharif Video Template</div><div class="template-meta">Video · Active</div></div></div>
+          <div class="template-card"><div class="template-thumb">🖼️</div><div class="template-info"><div class="template-name">Kharif Season Poster</div><div class="template-meta">Image · Active</div></div></div>
           <div class="template-card"><div class="template-thumb">🖼️</div><div class="template-info"><div class="template-name">Seed Drive Poster</div><div class="template-meta">Image · Active</div></div></div>
-          <div class="template-card"><div class="template-thumb">🎬</div><div class="template-info"><div class="template-name">Pest Control Video</div><div class="template-meta">Video · Active</div></div></div>
+          <div class="template-card"><div class="template-thumb">🖼️</div><div class="template-info"><div class="template-name">Pest Control Frame</div><div class="template-meta">Image · Active</div></div></div>
           <div class="template-card"><div class="template-thumb">🖼️</div><div class="template-info"><div class="template-name">Farmer Day Frame</div><div class="template-meta">Image · Active</div></div></div>
-          <div class="template-card"><div class="template-thumb">🎬</div><div class="template-info"><div class="template-name">Product Launch Reel</div><div class="template-meta">Video · Draft</div></div></div>
+          <div class="template-card"><div class="template-thumb">🖼️</div><div class="template-info"><div class="template-name">Product Launch Poster</div><div class="template-meta">Image · Draft</div></div></div>
           <div class="template-card"><div class="template-thumb">➕</div><div class="template-info"><div class="template-name" style="color:var(--green);">Upload New</div><div class="template-meta">Add template</div></div></div>
         </div>
       </div>
@@ -407,11 +383,11 @@ footer strong{color:var(--white-60);}
         <table class="obs-table">
           <thead><tr><th>Campaign</th><th>Templates</th><th>Farmers Reached</th><th>Generated</th><th>Shared</th></tr></thead>
           <tbody>
-            <tr><td>Kharif Season Launch</td><td>2 Video, 1 Image</td><td>4,820</td><td>4,510</td><td>3,890</td></tr>
-            <tr><td>Seed Protection Drive</td><td>1 Video, 2 Image</td><td>3,910</td><td>3,720</td><td>3,102</td></tr>
-            <tr><td>Pest Control Awareness</td><td>1 Video</td><td>2,640</td><td>2,480</td><td>1,960</td></tr>
+            <tr><td>Kharif Season Launch</td><td>3 Image</td><td>4,820</td><td>4,510</td><td>3,890</td></tr>
+            <tr><td>Seed Protection Drive</td><td>3 Image</td><td>3,910</td><td>3,720</td><td>3,102</td></tr>
+            <tr><td>Pest Control Awareness</td><td>1 Image</td><td>2,640</td><td>2,480</td><td>1,960</td></tr>
             <tr><td>Farmer Appreciation Day</td><td>1 Image</td><td>1,980</td><td>1,850</td><td>1,640</td></tr>
-            <tr><td>New Product Launch</td><td>1 Video (Draft)</td><td>860</td><td>790</td><td>612</td></tr>
+            <tr><td>New Product Launch</td><td>1 Image (Draft)</td><td>860</td><td>790</td><td>612</td></tr>
           </tbody>
         </table>
       </div>
@@ -429,7 +405,7 @@ footer strong{color:var(--white-60);}
     <div class="totals-box animate delay-3">
       <div class="total-grand">
         <div><span class="total-label-big">Technical Implementation</span><span class="no-gst">No GST applicable · Fixed cost</span></div>
-        <span class="total-val-big"><em>₹</em>2,25,000</span>
+        <span class="total-val-big"><em>₹</em>2,00,000</span>
       </div>
       <div class="bifurc-section">
         <div class="bifurc-title">What's Included</div>
@@ -441,7 +417,7 @@ footer strong{color:var(--white-60);}
         <div class="bifurc-div"></div>
         <div class="bifurc-row"><div class="bifurc-left"><span class="bifurc-icon">☁️</span><div><div class="bifurc-name">Deployment on Bayer Cloud</div><div class="bifurc-sub">Full setup and configuration on Bayer's own infrastructure</div></div></div><span class="bifurc-amt" style="color:var(--green);">✓</span></div>
         <div class="bifurc-div"></div>
-        <div class="bifurc-row"><div class="bifurc-left"><span class="bifurc-icon">🎁</span><div><div class="bifurc-name">Free POC — Proof of Concept</div><div class="bifurc-sub">Up to 1,000 video + image generations at no extra cost</div></div></div><span class="bifurc-amt" style="color:var(--green);">Free</span></div>
+        <div class="bifurc-row"><div class="bifurc-left"><span class="bifurc-icon">🎁</span><div><div class="bifurc-name">Free POC — Proof of Concept</div><div class="bifurc-sub">Up to 1,000 image generations at no extra cost</div></div></div><span class="bifurc-amt" style="color:var(--green);">Free</span></div>
       </div>
     </div>
 
@@ -452,43 +428,24 @@ footer strong{color:var(--white-60);}
 <section>
   <div class="container">
     <div class="eyebrow animate">Post-Launch Support</div>
-    <h2 class="section-title animate delay-1">Optional Annual Maintenance Contract</h2>
-    <p class="section-desc animate delay-2">Completely optional — take it only if you want ongoing hands-on support after go-live. Separate from and above the ₹2,25,000 build cost and template fees.</p>
+    <h2 class="section-title animate delay-1">Annual Maintenance Contract</h2>
+    <p class="section-desc animate delay-2">Optional — take it if you want ongoing hands-on support after go-live. Runs for 1 year from the day of go-live and covers the VM & infrastructure, which is hosted and managed by Devphant. Separate from and above the ₹2,00,000 build cost.</p>
 
     <div class="amc-card animate delay-3">
       <div class="amc-optional-tag">Optional</div>
       <div class="amc-header">
         <div class="amc-tier">AMC — Full Support Plan</div>
-        <div class="amc-price">₹10,000 <span>/ month</span></div>
-        <div class="amc-sub">Everything covered — technical, cloud, and reporting support</div>
+        <div class="amc-price">₹1,20,000 <span>/ year</span></div>
+        <div class="amc-sub">1 year from go-live · technical, infra, and reporting support</div>
       </div>
       <div class="amc-body">
         <ul class="amc-feats">
+          <li><span>✓</span> VM & infrastructure — ₹1,00,000 of the plan, hosted and managed end-to-end by Devphant</li>
           <li><span>✓</span> Technical issue resolution — bugs, errors, platform hiccups</li>
-          <li><span>✓</span> Cloud assistance — support on Bayer's cloud environment</li>
           <li><span>✓</span> Product usage support & reporting help — dashboard queries, data checks</li>
           <li><span>✓</span> Anything and everything related to platform upkeep is covered</li>
           <li><span style="color:var(--red);">✗</span> <span style="color:rgba(255,255,255,.4);">New feature development — always scoped and quoted as a separate effort</span></li>
         </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- OPTIONAL ADD-ONS -->
-<section>
-  <div class="container">
-    <div class="eyebrow animate">Optional Add-On</div>
-    <h2 class="section-title animate delay-1">Campaign Template Creation</h2>
-    <p class="section-desc animate delay-2">The platform build includes the full engine to run campaigns — but every new campaign needs its own creative template. This is optional and billed only when Bayer requests a new template.</p>
-
-    <div class="tmpl-price-card animate delay-3">
-      <div class="tmpl-price-row">
-        <div>
-          <div style="font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--green);margin-bottom:8px;">Optional · Per Template</div>
-          <div class="tmpl-price-val">₹5,000 <span>per video or image template</span></div>
-          <p style="font-size:13px;color:var(--muted);margin-top:10px;line-height:1.65;max-width:520px;">Designed and built by Devphant × Mood Board based on Bayer's creative brief for each campaign. Request as many templates as needed — each video or image template is billed individually at ₹5,000, only when requested. No upfront commitment.</p>
-        </div>
       </div>
     </div>
   </div>
@@ -499,39 +456,16 @@ footer strong{color:var(--white-60);}
   <div class="container">
     <div class="eyebrow animate">Scope Boundaries</div>
     <h2 class="section-title animate delay-1">Included & Not Included</h2>
-    <p class="section-desc animate delay-2">A clear breakdown of what's covered in the ₹2,25,000 build and what's separate.</p>
+    <p class="section-desc animate delay-2">A clear breakdown of what's covered in the ₹2,00,000 build and what's separate.</p>
     <div class="inc-wrap animate delay-3">
       <div style="display:grid;grid-template-columns:1fr 1fr;background:var(--black-4);border-bottom:1px solid var(--border);">
         <div style="padding:12px 22px;border-right:1px solid var(--border);display:flex;align-items:center;gap:8px;"><span style="width:7px;height:7px;border-radius:50%;background:var(--green);"></span><span style="font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--green);">Included</span></div>
         <div style="padding:12px 22px;display:flex;align-items:center;gap:8px;"><span style="width:7px;height:7px;border-radius:50%;background:var(--red);"></span><span style="font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--red);">Not Included</span></div>
       </div>
       <div class="inc-row"><div class="inc-cell"><span style="color:var(--green);">✓</span><div><div class="inc-cell-title">Full Platform Build</div><div class="inc-cell-sub">Farmer flow + admin console + dashboards</div></div></div><div class="inc-cell"><span style="color:var(--red);">✗</span><div><div class="inc-cell-title">Domain & SSL</div><div class="inc-cell-sub">Bayer's existing domain and hosting security setup</div></div></div></div>
-      <div class="inc-row"><div class="inc-cell"><span style="color:var(--green);">✓</span><div><div class="inc-cell-title">Free POC — 1,000 Generations</div><div class="inc-cell-sub">Test the platform before scaling up</div></div></div><div class="inc-cell"><span style="color:var(--red);">✗</span><div><div class="inc-cell-title">Ongoing AMC Support</div><div class="inc-cell-sub">₹10,000/month, optional, only if required</div></div></div></div>
-      <div class="inc-row"><div class="inc-cell"><span style="color:var(--green);">✓</span><div><div class="inc-cell-title">Deployment on Bayer Cloud</div><div class="inc-cell-sub">Full setup on client-owned infrastructure</div></div></div><div class="inc-cell"><span style="color:var(--red);">✗</span><div><div class="inc-cell-title">Cloud Hosting Costs</div><div class="inc-cell-sub">Billed directly to Bayer by their cloud provider</div></div></div></div>
+      <div class="inc-row"><div class="inc-cell"><span style="color:var(--green);">✓</span><div><div class="inc-cell-title">Free POC — 1,000 Generations</div><div class="inc-cell-sub">Test the platform before scaling up</div></div></div><div class="inc-cell"><span style="color:var(--red);">✗</span><div><div class="inc-cell-title">Ongoing AMC Support</div><div class="inc-cell-sub">₹1,20,000/year, optional, only if required</div></div></div></div>
+      <div class="inc-row"><div class="inc-cell"><span style="color:var(--green);">✓</span><div><div class="inc-cell-title">Deployment on Bayer Cloud</div><div class="inc-cell-sub">Full setup on client-owned infrastructure</div></div></div><div class="inc-cell"><span style="color:var(--red);">✗</span><div><div class="inc-cell-title">Cloud Hosting Costs</div><div class="inc-cell-sub">Covered under AMC (₹1,00,000/year) if opted in; otherwise billed directly to Bayer by their cloud provider</div></div></div></div>
       <div class="inc-row"><div class="inc-cell"><span style="color:var(--green);">✓</span><div><div class="inc-cell-title">Campaign & Farmer Reports</div><div class="inc-cell-sub">Live dashboards, campaign-wise breakdown</div></div></div><div class="inc-cell"><span style="color:var(--red);">✗</span><div><div class="inc-cell-title">New Feature Development</div><div class="inc-cell-sub">Scoped and quoted separately, even under AMC</div></div></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- TIMELINE -->
-<section>
-  <div class="container">
-    <div class="eyebrow animate">Delivery Plan</div>
-    <h2 class="section-title animate delay-1">Build Timeline</h2>
-    <p class="section-desc animate delay-2">A rapid 2-week build — from discovery to a fully deployed, POC-ready platform.</p>
-    <div class="gantt-wrap animate delay-3">
-      <div class="gantt-hdr">
-        <div class="gh-cell">Deliverable</div>
-        <div class="gh-cell">Week 1</div><div class="gh-cell">Week 2</div>
-      </div>
-      <div class="gantt-row"><div class="gr-label">🗺️ Discovery & Architecture</div><div class="gr-cell"><div class="gantt-bar" style="width:100%;animation-delay:.1s;"></div></div><div class="gr-cell"></div></div>
-      <div class="gantt-row"><div class="gr-label">🎨 UI/UX Design</div><div class="gr-cell"><div class="gantt-bar" style="width:100%;animation-delay:.12s;"></div></div><div class="gr-cell"><div class="gantt-bar" style="width:40%;animation-delay:.15s;"></div></div></div>
-      <div class="gantt-row"><div class="gr-label">📸 Farmer Upload Flow</div><div class="gr-cell"><div class="gantt-bar" style="width:60%;animation-delay:.15s;"></div></div><div class="gr-cell"><div class="gantt-bar" style="width:100%;animation-delay:.18s;"></div></div></div>
-      <div class="gantt-row"><div class="gr-label">🤖 AI Generation Engine</div><div class="gr-cell"><div class="gantt-bar" style="width:50%;animation-delay:.18s;"></div></div><div class="gr-cell"><div class="gantt-bar" style="width:100%;animation-delay:.2s;"></div></div></div>
-      <div class="gantt-row"><div class="gr-label">🎨 Admin Console & Templates</div><div class="gr-cell"></div><div class="gr-cell"><div class="gantt-bar" style="width:100%;animation-delay:.22s;"></div></div></div>
-      <div class="gantt-row"><div class="gr-label">📊 Dashboards & Reports</div><div class="gr-cell"></div><div class="gr-cell"><div class="gantt-bar" style="width:100%;animation-delay:.25s;"></div></div></div>
-      <div class="gantt-row"><div class="gr-label">☁️ Bayer Cloud Deployment</div><div class="gr-cell"></div><div class="gr-cell"><div class="gantt-bar" style="width:100%;animation-delay:.28s;"></div></div></div>
-      <div class="gantt-row"><div class="gr-label">🎁 POC Testing & Go-Live</div><div class="gr-cell"></div><div class="gr-cell"><div class="gantt-bar" style="width:100%;background:var(--amber);animation-delay:.3s;"></div></div></div>
     </div>
   </div>
 </section>
@@ -615,11 +549,6 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach(el => { if (el.isIntersecting) { el.target.classList.add('visible'); observer.unobserve(el.target); } });
 }, { threshold: 0.1 });
 document.querySelectorAll('.animate').forEach(el => observer.observe(el));
-
-const gObs = new IntersectionObserver((entries) => {
-  entries.forEach(entry => { if (entry.isIntersecting) { entry.target.querySelectorAll('.gantt-bar').forEach((b,i)=>{b.style.animationDelay=(.1+i*.05)+'s';}); gObs.unobserve(entry.target);} });
-}, { threshold: .15 });
-const g = document.querySelector('.gantt-wrap'); if(g) gObs.observe(g);
 
 const dObs = new IntersectionObserver((entries) => {
   entries.forEach(entry => { if (entry.isIntersecting) { entry.target.querySelectorAll('.bar-fill,.camp-bar-fill').forEach((b,i)=>{b.style.animationDelay=(.1+i*.08)+'s';}); dObs.unobserve(entry.target);} });
