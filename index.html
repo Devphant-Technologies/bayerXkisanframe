@@ -47,9 +47,9 @@ body{font-family:'Inter',sans-serif;background:var(--black);color:var(--white);l
 .hero h1 .accent{color:var(--green);}
 .hero-tagline{font-family:'Space Grotesk',sans-serif;font-size:15px;color:var(--muted);margin:12px auto 40px;max-width:560px;animation:fadeUp .7s .2s cubic-bezier(.22,1,.36,1) both;line-height:1.65;}
 .hero-stats{display:inline-flex;border:1px solid var(--border);border-radius:14px;overflow:hidden;background:var(--black-3);animation:fadeUp .7s .3s cubic-bezier(.22,1,.36,1) both;}
-.stat-item{padding:20px 30px;text-align:center;border-right:1px solid var(--border);}
+.stat-item{padding:20px 26px;text-align:center;border-right:1px solid var(--border);}
 .stat-item:last-child{border-right:none;}
-.stat-value{font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:700;color:var(--white);line-height:1;margin-bottom:4px;}
+.stat-value{font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;color:var(--white);line-height:1;margin-bottom:4px;}
 .stat-value em{color:var(--green);font-style:normal;}
 .stat-label{font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:1.5px;font-family:'Space Grotesk',sans-serif;}
 
@@ -143,7 +143,7 @@ section{padding:60px 0;border-bottom:1px solid var(--border);}
 
 /* PRICING */
 .totals-box{background:var(--black-3);border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-top:8px;}
-.total-grand{background:var(--black-4);padding:22px 24px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--border);}
+.total-grand{background:var(--black-4);padding:22px 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;border-bottom:1px solid var(--border);}
 .total-label-big{font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:700;color:var(--white);}
 .no-gst{font-size:11px;color:var(--green);font-weight:600;display:block;margin-top:3px;}
 .total-val-big{font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:700;color:var(--white);}
@@ -157,6 +157,11 @@ section{padding:60px 0;border-bottom:1px solid var(--border);}
 .bifurc-sub{font-size:11.5px;color:var(--muted);}
 .bifurc-amt{font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:700;white-space:nowrap;}
 .bifurc-div{height:1px;background:var(--border);margin:2px 0;}
+
+/* AI COST CARD */
+.aicost-wrap{margin-top:24px;background:var(--black-3);border:1px solid var(--blue-border);border-radius:16px;overflow:hidden;}
+.aicost-header{padding:18px 24px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.aicost-tag{background:var(--blue-dim);border:1px solid var(--blue-border);color:var(--blue);font-size:10.5px;font-weight:700;font-family:'Space Grotesk',sans-serif;padding:4px 12px;border-radius:100px;text-transform:uppercase;letter-spacing:1px;white-space:nowrap;}
 
 /* AMC */
 .amc-card{background:var(--black-3);border:1px solid var(--green-border);border-radius:16px;overflow:hidden;max-width:580px;position:relative;}
@@ -198,7 +203,7 @@ footer strong{color:var(--white-60);}
   .hero-stats{display:grid;grid-template-columns:1fr 1fr;}
   .stat-item{border-right:none;border-bottom:1px solid var(--border);}
   .stat-item:nth-child(odd){border-right:1px solid var(--border);}
-  .stat-item:nth-child(3){border-bottom:none;}
+  .stat-item:nth-child(3),.stat-item:nth-child(4){border-bottom:none;}
   .container{padding:0 16px;}section{padding:40px 0;}
   .feat-grid,.inc-row{grid-template-columns:1fr;}
   .inc-cell{border-right:none;border-bottom:1px solid var(--border);}
@@ -229,13 +234,14 @@ footer strong{color:var(--white-60);}
     <span class="for-sep"></span>
     <span class="client-name">Bayer</span>
   </div>
-  <div class="hero-badge"><span class="badge-dot"></span>Product Proposal · 2026</div>
+  <div class="hero-badge"><span class="badge-dot"></span>POC Completed · Ready for Full Build</div>
   <h1>Kisanframe<br/><span class="accent">by Devphant</span></h1>
   <p class="hero-tagline">A farmer-facing AI campaign platform for Bayer — farmers upload a photo, AI generates a personalised image from campaign templates, and they download or share it instantly.</p>
   <div class="hero-stats">
-    <div class="stat-item"><div class="stat-value"><em>₹</em>2,00,000</div><div class="stat-label">Tech Build</div></div>
-    <div class="stat-item"><div class="stat-value">1,000</div><div class="stat-label">Free POC Limit</div></div>
+    <div class="stat-item"><div class="stat-value"><em>₹</em>2,00,000</div><div class="stat-label">Tech Build + GST</div></div>
     <div class="stat-item"><div class="stat-value"><em>₹</em>1,20,000</div><div class="stat-label">AMC / Year</div></div>
+    <div class="stat-item"><div class="stat-value">~<em>₹</em>7</div><div class="stat-label">AI Cost / Image</div></div>
+    <div class="stat-item"><div class="stat-value" style="color:var(--green);">✓ Done</div><div class="stat-label">Free POC</div></div>
   </div>
 </div>
 
@@ -292,7 +298,7 @@ footer strong{color:var(--white-60);}
       <div class="feat animate delay-1"><span class="feat-icon">📤</span><h3>Download & Social Sharing</h3><p>One-tap download or direct share to WhatsApp, Instagram, and Facebook — built for virality across farmer networks.</p><span class="feat-tag">Farmer Facing</span></div>
       <div class="feat animate delay-2"><span class="feat-icon">📊</span><h3>Campaign-Wise Reports</h3><p>See exactly how each campaign is performing — uploads, generations, downloads, and shares — broken down campaign by campaign.</p><span class="feat-tag">Admin Console</span></div>
       <div class="feat animate delay-3"><span class="feat-icon">👥</span><h3>Farmer Engagement Dashboard</h3><p>Track total farmers reached, photos uploaded, images generated, and download/share rates — in real time.</p><span class="feat-tag">Admin Console</span></div>
-      <div class="feat animate delay-1"><span class="feat-icon">☁️</span><h3>Deployed on Bayer's Cloud</h3><p>The entire platform is deployed on Bayer's own cloud infrastructure — full data ownership and control stays with Bayer.</p><span class="feat-tag">Infrastructure</span></div>
+      <div class="feat animate delay-1"><span class="feat-icon">☁️</span><h3>Deployed on Bayer's Own Server</h3><p>The entire platform is deployed on Bayer's own server/cloud infrastructure — full data ownership and control stays with Bayer.</p><span class="feat-tag">Infrastructure</span></div>
       <div class="feat animate delay-2"><span class="feat-icon">🔐</span><h3>Secure Admin Login</h3><p>Role-based admin console access for Bayer's marketing team to manage templates, campaigns, and view reports securely.</p><span class="feat-tag">Admin Console</span></div>
       <div class="feat animate delay-3"><span class="feat-icon">🎯</span><h3>Multi-Campaign Support</h3><p>Run multiple campaigns simultaneously, each with its own templates, tracking, and performance reports — all from one platform.</p><span class="feat-tag">Scalable</span></div>
     </div>
@@ -399,12 +405,12 @@ footer strong{color:var(--white-60);}
   <div class="container">
     <div class="eyebrow animate">Investment</div>
     <h2 class="section-title animate delay-1">Simple, Transparent Pricing</h2>
-    <p class="section-desc animate delay-2">One fixed technical build cost, plus a free proof-of-concept before you commit further.</p>
+    <p class="section-desc animate delay-2">A fixed one-time build cost, an annual maintenance plan, and a variable AI generation cost billed on actual usage. The free POC has already been completed.</p>
 
     <div class="totals-box animate delay-3">
       <div class="total-grand">
-        <div><span class="total-label-big">Technical Implementation</span><span class="no-gst">No GST applicable · Fixed cost</span></div>
-        <span class="total-val-big"><em>₹</em>2,00,000</span>
+        <div><span class="total-label-big">Technical Implementation</span><span class="no-gst" style="color:var(--amber);">+ 18% GST · One-time, fixed cost</span></div>
+        <span class="total-val-big"><em>₹</em>2,00,000<span style="font-size:14px;color:var(--muted);font-weight:500;"> + GST</span></span>
       </div>
       <div class="bifurc-section">
         <div class="bifurc-title">What's Included</div>
@@ -414,10 +420,31 @@ footer strong{color:var(--white-60);}
         <div class="bifurc-div"></div>
         <div class="bifurc-row"><div class="bifurc-left"><span class="bifurc-icon">📊</span><div><div class="bifurc-name">Campaign & Engagement Dashboards</div><div class="bifurc-sub">Farmer reports, download/share tracking, campaign-wise breakdown</div></div></div><span class="bifurc-amt" style="color:var(--green);">✓</span></div>
         <div class="bifurc-div"></div>
-        <div class="bifurc-row"><div class="bifurc-left"><span class="bifurc-icon">☁️</span><div><div class="bifurc-name">Deployment on Bayer Cloud</div><div class="bifurc-sub">Full setup and configuration on Bayer's own infrastructure</div></div></div><span class="bifurc-amt" style="color:var(--green);">✓</span></div>
+        <div class="bifurc-row"><div class="bifurc-left"><span class="bifurc-icon">☁️</span><div><div class="bifurc-name">Deployment on Bayer's Own Server</div><div class="bifurc-sub">Full setup and configuration on Bayer's own infrastructure</div></div></div><span class="bifurc-amt" style="color:var(--green);">✓</span></div>
         <div class="bifurc-div"></div>
-        <div class="bifurc-row"><div class="bifurc-left"><span class="bifurc-icon">🎁</span><div><div class="bifurc-name">Free POC — Proof of Concept</div><div class="bifurc-sub">Up to 1,000 image generations at no extra cost</div></div></div><span class="bifurc-amt" style="color:var(--green);">Free</span></div>
+        <div class="bifurc-row"><div class="bifurc-left"><span class="bifurc-icon">🎁</span><div><div class="bifurc-name">Free POC — Proof of Concept</div><div class="bifurc-sub">1,000 image generations · completed successfully</div></div></div><span class="bifurc-amt" style="color:var(--green);">✓ Completed</span></div>
+        <div class="bifurc-div"></div>
+        <div class="bifurc-row"><div class="bifurc-left"><span class="bifurc-icon">🤖</span><div><div class="bifurc-name">AI Image Generation</div><div class="bifurc-sub">~₹7 per generated image — variable, billed separately per invoice on actual usage</div></div></div><span class="bifurc-amt" style="color:var(--amber);">Usage-based</span></div>
       </div>
+    </div>
+
+    <div class="aicost-wrap animate delay-4">
+      <div class="aicost-header">
+        <div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:700;color:var(--white);">AI Image Generation — Variable Cost Projection</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:3px;">Charged only for actual generations, invoiced periodically · not part of the fixed build or AMC cost</div>
+        </div>
+        <span class="aicost-tag">Billed on Usage</span>
+      </div>
+      <table class="obs-table">
+        <thead><tr><th>Monthly Images</th><th>Estimated AI Cost</th></tr></thead>
+        <tbody>
+          <tr><td>1,000</td><td>₹7,000</td></tr>
+          <tr><td>3,000</td><td>₹21,000</td></tr>
+          <tr><td>5,000</td><td>₹35,000</td></tr>
+          <tr><td>10,000</td><td>₹70,000</td></tr>
+        </tbody>
+      </table>
     </div>
 
   </div>
@@ -428,7 +455,7 @@ footer strong{color:var(--white-60);}
   <div class="container">
     <div class="eyebrow animate">Post-Launch Support</div>
     <h2 class="section-title animate delay-1">Annual Maintenance Contract</h2>
-    <p class="section-desc animate delay-2">Runs for 1 year from the day of go-live and covers the VM & infrastructure, which is hosted and managed by Devphant. Separate from and above the ₹2,00,000 build cost.</p>
+    <p class="section-desc animate delay-2">Runs for 1 year from the day of go-live and covers ongoing support, monitoring, and maintenance for the platform deployed on Bayer's own server. Separate from and above the ₹2,00,000 + GST build cost.</p>
 
     <div class="amc-card animate delay-3">
       <div class="amc-header">
@@ -438,11 +465,12 @@ footer strong{color:var(--white-60);}
       </div>
       <div class="amc-body">
         <ul class="amc-feats">
-          <li><span>✓</span> VM & infrastructure — ₹1,20,000 of the plan, hosted and managed end-to-end by Devphant</li>
+          <li><span>✓</span> Platform hosted on Bayer's own server — Devphant provides end-to-end support and upkeep</li>
           <li><span>✓</span> Technical issue resolution — bugs, errors, platform hiccups</li>
           <li><span>✓</span> Product usage support & reporting help — dashboard queries, data checks</li>
           <li><span>✓</span> Anything and everything related to platform upkeep is covered</li>
           <li><span style="color:var(--red);">✗</span> <span style="color:rgba(255,255,255,.4);">New feature development — always scoped and quoted as a separate effort</span></li>
+          <li><span style="color:var(--red);">✗</span> <span style="color:rgba(255,255,255,.4);">AI generation cost — variable, billed separately per invoice based on usage</span></li>
         </ul>
       </div>
     </div>
@@ -454,15 +482,16 @@ footer strong{color:var(--white-60);}
   <div class="container">
     <div class="eyebrow animate">Scope Boundaries</div>
     <h2 class="section-title animate delay-1">Included & Not Included</h2>
-    <p class="section-desc animate delay-2">A clear breakdown of what's covered in the ₹2,00,000 build and what's separate.</p>
+    <p class="section-desc animate delay-2">A clear breakdown of what's covered in the ₹2,00,000 + GST build and what's billed separately.</p>
     <div class="inc-wrap animate delay-3">
       <div style="display:grid;grid-template-columns:1fr 1fr;background:var(--black-4);border-bottom:1px solid var(--border);">
         <div style="padding:12px 22px;border-right:1px solid var(--border);display:flex;align-items:center;gap:8px;"><span style="width:7px;height:7px;border-radius:50%;background:var(--green);"></span><span style="font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--green);">Included</span></div>
         <div style="padding:12px 22px;display:flex;align-items:center;gap:8px;"><span style="width:7px;height:7px;border-radius:50%;background:var(--red);"></span><span style="font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--red);">Not Included</span></div>
       </div>
       <div class="inc-row"><div class="inc-cell"><span style="color:var(--green);">✓</span><div><div class="inc-cell-title">Full Platform Build</div><div class="inc-cell-sub">Farmer flow + admin console + dashboards</div></div></div><div class="inc-cell"><span style="color:var(--red);">✗</span><div><div class="inc-cell-title">Domain & SSL</div><div class="inc-cell-sub">Bayer's existing domain and hosting security setup</div></div></div></div>
-      <div class="inc-row"><div class="inc-cell"><span style="color:var(--green);">✓</span><div><div class="inc-cell-title">Free POC — 1,000 Generations</div><div class="inc-cell-sub">Test the platform before scaling up</div></div></div><div class="inc-cell"><span style="color:var(--red);">✗</span><div><div class="inc-cell-title">AMC Support</div><div class="inc-cell-sub">₹1,20,000/year, billed separately from go-live</div></div></div></div>
+      <div class="inc-row"><div class="inc-cell"><span style="color:var(--green);">✓</span><div><div class="inc-cell-title">Free POC — 1,000 Generations</div><div class="inc-cell-sub">Completed successfully ✓</div></div></div><div class="inc-cell"><span style="color:var(--red);">✗</span><div><div class="inc-cell-title">AMC Support</div><div class="inc-cell-sub">₹1,20,000/year, billed separately from go-live</div></div></div></div>
       <div class="inc-row"><div class="inc-cell"><span style="color:var(--green);">✓</span><div><div class="inc-cell-title">Campaign & Farmer Reports</div><div class="inc-cell-sub">Live dashboards, campaign-wise breakdown</div></div></div><div class="inc-cell"><span style="color:var(--red);">✗</span><div><div class="inc-cell-title">New Feature Development</div><div class="inc-cell-sub">Scoped and quoted separately, even under AMC</div></div></div></div>
+      <div class="inc-row"><div class="inc-cell"><span style="color:var(--green);">✓</span><div><div class="inc-cell-title">Deployment Setup</div><div class="inc-cell-sub">Full configuration on Bayer's own server</div></div></div><div class="inc-cell"><span style="color:var(--red);">✗</span><div><div class="inc-cell-title">AI Generation Cost</div><div class="inc-cell-sub">~₹7/image, variable, billed per invoice on actual usage</div></div></div></div>
     </div>
   </div>
 </section>
@@ -472,15 +501,15 @@ footer strong{color:var(--white-60);}
   <div class="cta-glow"></div>
   <div style="font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--green);margin-bottom:16px;position:relative;">Let's Build Kisanframe</div>
   <h2 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(28px,5vw,48px);font-weight:700;color:var(--white);letter-spacing:-1px;line-height:1.1;margin-bottom:12px;position:relative;">Ready to empower<br/><span style="color:var(--green);">farmers?</span></h2>
-  <p style="font-size:15px;color:var(--muted);max-width:440px;margin:0 auto 40px;line-height:1.7;position:relative;">Let's kick off with the free POC — 1,000 generations, zero cost, full platform preview.</p>
+  <p style="font-size:15px;color:var(--muted);max-width:460px;margin:0 auto 40px;line-height:1.7;position:relative;">The free POC is complete — let's move forward with the full build, deployment on your server, and go-live.</p>
   <button id="launch-btn" onclick="launchConfetti()" style="display:inline-flex;align-items:center;gap:14px;background:var(--green);color:#000;font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:700;padding:18px 40px;border-radius:100px;border:none;cursor:pointer;transition:transform .2s,box-shadow .2s;animation:pulse-ring 2.5s infinite;position:relative;z-index:2;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'">
     <span style="width:36px;height:36px;background:rgba(0,0,0,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;">▶</span>
-    Yes, Let's Build Kisanframe
+    Yes, Let's Proceed with the Build
   </button>
   <div id="cta-after" style="display:none;margin-top:40px;">
     <div style="font-size:32px;margin-bottom:12px;">🎉</div>
     <div style="font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;color:var(--white);margin-bottom:8px;">Excellent! Let's talk.</div>
-    <div style="font-size:14px;color:var(--muted);margin-bottom:24px;">We'll set up the free POC and take it from there.</div>
+    <div style="font-size:14px;color:var(--muted);margin-bottom:24px;">We'll kick off the full build, deployment, and go-live process.</div>
     <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative;z-index:2;">
       <a href="mailto:info@devphant.com" style="display:inline-flex;align-items:center;gap:8px;background:var(--black-3);border:1px solid var(--green-border);color:var(--white);font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:600;padding:12px 24px;border-radius:100px;text-decoration:none;">📧 &nbsp; info@devphant.com</a>
       <a href="https://wa.me/919167366731" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:rgba(37,211,102,.1);border:1px solid rgba(37,211,102,.3);color:#25D366;font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:600;padding:12px 24px;border-radius:100px;text-decoration:none;">💬 &nbsp; WhatsApp Us</a>
